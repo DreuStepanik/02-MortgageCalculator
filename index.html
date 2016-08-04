@@ -1,0 +1,52 @@
+<!-- Create a basic HTML page, and make sure it has the following HTML elements. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mortgage Calculator</title>
+	<link rel="stylesheet" href="style.css">
+<!-- bootstrap css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+</head>
+<body>
+	<header id="logo">
+		<h1>Mortgage Calculator</h1>
+		<h2>Class Project #2</h2>
+	</header>
+	<form>
+<!-- Add an input element for the user to enter the mortgage loan balance in US dollars. -->
+		<label for="balance">Loan balance</label>
+  	<input type="text" name="loanBalance" id="balance">
+<!-- Add an input element for the user to enter the annual percentage rate of charge (APR). -->
+  	<label for="rate">Annual percentage rate of charge (%)</label>
+  	<input type="text" name="annualRate" id="rate">
+<!-- Add an input element for the user to enter the loan term in years. -->
+  	<label for="term">Loan term (years)</label>
+  	<input type="text" name="loanTerm" id="term">
+<!-- Add a select element for the user to select a period, populated with option elements where the value attribute is set to the available periods, in the case, either 'monthly' or 'bimonthly', and the content inside of the option elements represents the corresponding number of periods over a year (12 or 6). -->
+  	<label for="period">Period</label>
+  	<select id="period">
+  		<option>Select</option>
+  		<option value="12">Monthly</option>
+  		<option value="6">Bimonthly</option> 
+  	</select>
+<!-- Add a button element for the user to calculate their monthly mortgage payment based on the above inputs. -->
+		<button type="button" id="buttonSubmit" onclick="">Calculate</button>
+	</form>
+<!-- Add a p element to display the expected output. -->	
+	<p id="calculatedMortgage"></p>
+<!-- Reference for index.js before the </body> tag. -->
+	<!-- jQuery first, then bootstrap js -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!-- Tether for Bootstrap --> 
+    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+
+	<script src="index.js"></script>
+</body>
+</html>
